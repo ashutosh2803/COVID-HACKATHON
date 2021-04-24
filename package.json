@@ -1,25 +1,19 @@
 {
-  "name": "COVID-HACKATHON",
+  "name": "hackton",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
     "server": "nodemon backend/server"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ashutosh2803/COVID-HACKATHON.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ashutosh2803/COVID-HACKATHON/issues"
-  },
-  "homepage": "https://github.com/ashutosh2803/COVID-HACKATHON#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "nodemon": "^2.0.7",
     "socket.io": "^4.0.1"
   }
 }
