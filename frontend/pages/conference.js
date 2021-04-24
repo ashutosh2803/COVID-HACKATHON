@@ -7,11 +7,10 @@ import React, { useEffect, useRef, useState } from "react"
 import { CopyToClipboard } from "react-copy-to-clipboard"
 import Peer from "simple-peer"
 import io from "socket.io-client"
-import styles from "../src/styles/app.module.css"
+import styles from "../src/Styles/conference.module.css"
 
-
-const socket = io.connect('http://localhost:6000')
-function App() {
+const socket = io.connect('http://localhost:5005')
+function Conference() {
 	const [ me, setMe ] = useState("")
 	const [ stream, setStream ] = useState()
 	const [ receivingCall, setReceivingCall ] = useState(false)
@@ -95,26 +94,7 @@ function App() {
 
 	return (
 		<>
-     <style jsx global>
-            {`
-                body {
-                  margin: 0;
-                  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-                    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-                    sans-serif;
-                  -webkit-font-smoothing: antialiased;
-                  -moz-osx-font-smoothing: grayscale;
-                  background: #4776e6; /* fallback for old browsers */
-                background: -webkit-linear-gradient(to right, #8e54e9, #4776e6); /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(
-                to right,
-                #8e54e9,
-                #4776e6
-              );
-                }
-            `}
-        </style>
-			<h1 style={{ textAlign: "center", color: '#fff' }}>Zoomish</h1>
+			<h1 style={{ textAlign: "center", color: '#fff' }}>Appoinment</h1>
 		<div className={styles.container}>
 			<div className={styles.videoContainer}>
 				<div className={styles.video}>
@@ -163,7 +143,7 @@ function App() {
 			</div>
 			<div>
 				{receivingCall && !callAccepted ? (
-						<div className="caller">
+						<div className={styles.caller}>
 						<h1 >{name} is calling...</h1>
 						<Button variant="contained" color="primary" onClick={answerCall}>
 							Answer
@@ -176,4 +156,4 @@ function App() {
 	)
 }
 
-export default App
+export default Conference
