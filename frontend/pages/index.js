@@ -3,7 +3,6 @@ import {FiHome } from "react-icons/fi"
 import {FaBlogger} from "react-icons/fa"
 import {FcAbout} from "react-icons/fc"
 import {RiHospitalFill} from "react-icons/ri"
-import styles from "../styles/index.module.css"
 import { useEffect, useState, useRef } from 'react';
 import io from "socket.io-client";
 import Peer from "simple-peer";
