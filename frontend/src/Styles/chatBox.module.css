@@ -1,0 +1,45 @@
+.chatBoxWrapper {
+    position: fixed;
+    width: 90%;
+    top: 50vh;
+    height: 40vh;
+    padding: 1%;
+    border: 1px solid black;
+    /* background-color: black; */
+    left: 80vw;
+  }
+  .messageContainer {
+    width: 20%;
+  }
+  .chatTitle{
+    /* text-align: center; */
+    font-weight: bold;
+  }
+  
+  .messageContainer div {
+    background-color: #CCC;
+    padding: 5px;
+  }
+
+  .messageContainer div:nth-child(2n) {
+    background-color: #FFF;
+  }
+
+  .sendContainer {
+    padding-bottom: 30px;
+    bottom: 0;
+    background-color: white;
+    max-width: 1200px;
+    width: 10%;
+    display: flex;
+  }
+
+  .messageInput {
+    flex-grow: 1;
+    position: fixed;
+    top: 80%;
+  }
+  .sendButton{
+    position: fixed;
+    top: 80%;
+  }
