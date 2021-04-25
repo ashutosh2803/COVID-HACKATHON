@@ -1,8 +1,9 @@
-import React from 'react'
-import YouTube from 'react-youtube';
+import React from 'react';
+// import YouTube from 'react-youtube';
 import styles from "../Styles/Homepage.module.css";
 import { BsMoon } from "react-icons/bs";
 import { BiMoon } from "react-icons/bi";
+import hospitalNearby from '../../pages/hospitalNearby';
 
 const HomePage = () => {
     const [isDark, setIsDark] = React.useState(false)
@@ -35,7 +36,9 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <div className={styles.youtubeWrapper}>
+            <hospitalNearby/>
+
+            {/* <div className={styles.youtubeWrapper}>
                 <h1>Youtube Recommendations on COVID-19</h1>
                 <div>
                     <div className={styles.youtube}><YouTube videoId="1APwq1df6Mw"/></div>
@@ -43,7 +46,7 @@ const HomePage = () => {
                     <div className={styles.youtube}><YouTube videoId="ZqaPZ3ST1AY" /></div>
                     <div className={styles.youtube}><YouTube videoId="LeK65pc0wrQ"/></div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

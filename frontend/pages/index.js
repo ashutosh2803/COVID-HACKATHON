@@ -5,6 +5,7 @@ import {FcAbout} from "react-icons/fc"
 import {RiHospitalFill} from "react-icons/ri"
 import { HomePage } from "../src/components/HomePage"
 
+
 const IndexPage = () => {
     return (
         <>
