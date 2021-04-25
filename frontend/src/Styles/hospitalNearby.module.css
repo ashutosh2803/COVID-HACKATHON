@@ -1,0 +1,88 @@
+.container{
+    /* background-color: black; */
+    /* display:flex; */
+    /* justify-content: center;
+    align-items: center; */
+    /* style={{border: '2px solid green',display: 'flex',height:"70vh"}} */
+    display: flex;
+    height:100vh;
+    background-color: antiquewhite;
+}
+.itemCard{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height:400px; */
+    padding:10px;
+    /* border:1px solid black; */
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color:#e3d9bc;
+    
+
+}
+.imgContainer{
+    /* border:3px solid blueviolet; */
+}
+.imgContainer img{border-radius: 5px;}
+.itemCard span{
+    margin: 10px;
+}
+
+.heading{
+    border-radius: 5px;
+    padding:10px;
+    background-color:#e8cc7d;
+}
+.wards{
+    border: "1px solid red";
+    display: flex;flex-direction: row;
+    justify-content:space-around;
+    /* style={{ ,width: "100%",textAlign: "center"}} */
+}
+.wards h3{
+    align-self: center;
+}
+.wards  p{
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+/* style={{border: "1px solid black",padding: "5px",margin: "5px",display: "flex",flexDirection: "column",justifyContent: "center"
+    ,alignItems: "center" }} */
+
+    .infoWindow img{text-align: center;margin-left: 20%;}
+.infoWindow{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid darkblue; */
+    width:200px;
+}
+.infoWindow span{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-left: 20px;
+}
+.infoWindow span p{
+    border: 1px solid greenyellow;
+    padding:1px;
+    width:70px;
+
+}
+.homeBtn{
+    padding: 2%;
+    border: none;
+    font-weight: 400;
+    border-radius: 10px;
+    background-color: rgb(201, 198, 198);
+    letter-spacing: 0.1ch;
+    font-size: 25px;
+    width: fit-content;
+}
+.homeBtn:hover{
+    background-color: coral;
+}

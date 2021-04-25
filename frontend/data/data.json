@@ -1,0 +1,105 @@
+[{
+    "id":1,
+    "title":"Alpine Superspeciality Hospital",
+    "address":"Sukhmani Complex Beed Bypass Rd, PWD Colony Aurangabad, Maharashtra 431005 India",
+    "oxygen_supply":"medium",
+    "private_ward":"15",
+    "general_ward":"45",
+    "distance":"5800m",
+    "vaccine":"Yes",
+    "img_url":"https://content3.jdmagicbox.com/comp/aurangabad-maharashtra/s8/9999px240.x240.180425081446.y1s8/catalogue/alpine-superspeciality-hospital-a-unit-of-jara-hospitals-pvt-ltd--aurangabad-maharashtra-pasfqoutxq.jpg",
+    "location": { "lat": 19.852380990253863, "lng": 75.32441139221191 }
+},{
+    "id":2,
+    "title":"Bembde Hospital for Plastic, Cosmetic, Burns & Hand Surgery",
+    "address":"Beed Bypass Rd Sangram Nagar Aurangabad, Maharashtra 431005 India",
+    "oxygen_supply":"low",
+    "private_ward":"24",
+    "general_ward":"53",
+    "distance":"6000m",
+    "vaccine":"Yes",
+    "img_url":"https://lh5.googleusercontent.com/p/AF1QipPjdN98c8MHVyQ6bD-4V1s0QlA4RO8KG1dA_pXR=w408-h397-k-no",
+    "location": { 
+        "lat": 19.849878345782134, "lng": 75.33496856689453
+        }
+},{
+    "id":"3",
+    "title":"United CIIGMA Hospital",
+    "address":"Plot no 6 7, Darga Rd, Shahnoorwadi Aurangabad, Maharashtra 431005 India",
+    "oxygen_supply":"high",
+    "private_ward":"45",
+    "general_ward":"34",
+    "distance":"2700m",
+    "vaccine":"Yes",
+    "img_url":"https://lh5.googleusercontent.com/p/AF1QipM95Iha46FJRX-lkfK_doDX5fbnYUZeiCqt7L48=w408-h408-k-no  ",
+    "location":{ "lat": 19.859404330045162, "lng": 75.33625602722168 }
+},{
+    "id":4,
+    "title":"Roplekar Health Care Centre",
+    "address":"160-161, Veer Savarkar Chowk Tilaknagar, Ulkanagari Aurangabad, Maharashtra 431005 India",
+    "oxygen_supply":"high",
+    "private_ward":"20",
+    "general_ward":"50",
+    "distance":"2550m",
+    "vaccine":"Yes",
+    "img_url":"https://lh5.googleusercontent.com/p/AF1QipMxBD742F6Fv6h_266Pux8-8vVGjsgQccqLxuJw=w408-h306-k-no",
+    "location":{ "lat": 19.86650808155144, "lng": 75.33681392669678 }
+    
+},{
+    "id":5,
+    "title":"Manik Hospital And Research Centre",
+    "address":"Jawahar Nagar Rd Beside Police Station, Shivneri Nagar, Ashok Nagar, Garkheda Aurangabad, Maharashtra 431003 India",
+    "oxygen_supply":"low",
+    "private_ward":"50",
+    "general_ward":"100",
+    "distance":"3400m",
+    "vaccine":"No",
+    "img_url":"https://lh5.googleusercontent.com/p/AF1QipMGtNvN7ieaU5dpXvHO_6SgeBvjc3_o6OMZPdOf=w408-h306-k-no",
+    "location":{ "lat": 19.86557976846281, "lng": 75.34780025482178 }
+},{
+    "id":6,
+    "title":"The Pacific Hospital",
+    "address":"Plot No.16, N/12, Sector F, Near SBH Bank, Himayat Bagh, Cidco Aurangabad, Maharashtra 431001 India",
+    "oxygen_supply":"medium",
+    "private_ward":"105",
+    "general_ward":"204",
+    "distance":"7000m",
+    "vaccine":"NO",
+    "img_url":"https://lh5.googleusercontent.com/p/AF1QipPDaGOCUBwaZZOU2I9hXQsl__27H7RPcwEdgztj=w408-h492-k-no",
+    "location": { "lat": 19.903797553779718, "lng": 75.3416633605957 }
+   
+},{
+    "id":7,
+    "title":"City care hospital Aurangabad",
+    "address":"New Usmanpura, Pannalal Nagar, New Usmanpura Aurangabad, Maharashtra 431005 India",
+    "oxygen_supply":"low",
+    "private_ward":"34",
+    "general_ward":"70",
+    "distance":"1590m",
+    "vaccine":"NO",
+    "img_url":"https://lh5.googleusercontent.com/p/AF1QipNK4L-HCL1n-cb04Q9Qs3Trvjm0jy9f1RMuCZw=w408-h306-k-no",
+    "location":{"lat":19.8713,"lng":75.3294}
+    
+},{
+    "id":8,
+    "title":"Apex Superspeciality Hospital",
+    "address":"5-8 Bassayye nagar, Opposite SFS School, Jalna Road Sanjay Nagar Aurangabad, Maharashtra 431001 India",
+    "oxygen_supply":"low",
+    "private_ward":"34",
+    "general_ward":"70",
+    "distance":"590m",
+    "vaccine":"NO",
+    "img_url":"https://lh5.googleusercontent.com/p/AF1QipPTFmF-tcAEKfnRv8BnjYRYsLMiv1AWLTMwBjlS=w408-h725-k-no",
+    "location":{ "lat": 19.881279636613456, "lng": 75.34707069396973 }
+},{
+    "id":9,
+    "title":"Lifeline Multispeciality Hospital",
+    "address":"5-8 Bassayye nagar, Opposite SFS School, Jalna Road Sanjay Nagar Aurangabad, Maharashtra 431001 India",
+    "oxygen_supply":"low",
+    "private_ward":"34",
+    "general_ward":"70",
+    "distance":"590m",
+    "vaccine":"NO",
+    "img_url":"https://lh5.googleusercontent.com/p/AF1QipPTFmF-tcAEKfnRv8BnjYRYsLMiv1AWLTMwBjlS=w408-h725-k-no",
+    "location":{ "lat": 19.85181588043574, "lng": 75.3581428527832 }
+}]

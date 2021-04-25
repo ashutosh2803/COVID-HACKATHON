@@ -30,11 +30,24 @@
 	grid-template-columns: 1fr 1fr;
 	justify-content: center;
 	align-content: center;
-	margin-top: 10rem;
+	margin-top: 1rem;
 	margin-left: 10rem;
 }
 
 .caller {
 	text-align: center;
 	color: #fff;
+}
+.homeBtn{
+	padding: 1%;
+    border: none;
+    font-weight: 400;
+    border-radius: 10px;
+    background-color: rgb(201, 198, 198);
+    letter-spacing: 0.1ch;
+    font-size: 25px;
+    width: fit-content;
+}
+.homeBtn:hover{
+    background-color: coral;
 }

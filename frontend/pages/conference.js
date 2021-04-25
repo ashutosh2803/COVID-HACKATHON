@@ -9,9 +9,12 @@ import { CopyToClipboard } from "react-copy-to-clipboard"
 import Peer from "simple-peer"
 import io from "socket.io-client"
 import styles from "../src/Styles/conference.module.css"
+import { FiHome } from "react-icons/fi";
+import { useRouter } from 'next/router';
 
 const socket = io.connect('http://localhost:5006')
 function Conference() {
+	const router = useRouter();
 	const [ me, setMe ] = useState("")
 	const [ stream, setStream ] = useState()
 	const [ receivingCall, setReceivingCall ] = useState(false)
@@ -95,7 +98,19 @@ function Conference() {
 
 	return (
 		<>
-			<h1 style={{ textAlign: "center", color: '#fff' }}>Appoinment</h1>
+			<style jsx global>
+                    {`
+                        body {
+                            margin:0;
+                            padding:0;
+							background-color: #FAEBD7;
+                        }
+                    `}
+            </style>
+			<div>
+			<button className={styles.homeBtn} onClick={() => router.push('http://localhost:3002')}><FiHome size="34px" /></button>
+			</div>
+			<h1 style={{ textAlign: "center", fontSize: "40px", color: '#4158B5', letterSpacing: "0.4ch" }}>Appoinment</h1>
 		<div className={styles.container}>
 			<div className={styles.videoContainer}>
 				<div className={styles.video}>

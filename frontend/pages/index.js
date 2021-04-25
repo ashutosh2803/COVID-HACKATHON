@@ -6,6 +6,7 @@ import Footer from "../src/components/Footer"
 // import {RiHospitalFill} from "react-icons/ri"
 import { HomePage } from "../src/components/HomePage"
 
+
 const IndexPage = () => {
     return (
         <>
