@@ -1,20 +1,14 @@
 import React from 'react';
 // import YouTube from 'react-youtube';
 import styles from "../Styles/Homepage.module.css";
-import { BsMoon } from "react-icons/bs";
-import { BiMoon } from "react-icons/bi";
-import hospitalNearby from '../../pages/hospitalNearby';
+import { useRouter } from 'next/router';
+import { Navbar } from './Navbar';
 
 const HomePage = () => {
-    const [isDark, setIsDark] = React.useState(false)
+    const router = useRouter();
     return (
         <>
-            <style jsx global>{`
-                body {
-                    background: ${isDark ? "darkslategray" : "antiquewhite"};
-                }
-            `}</style>
-            <button onClick={() => setIsDark(!isDark)}>{ !isDark ? <BsMoon/> : <BiMoon/>}</button>
+            <Navbar/>
             <div className={styles.openingWrapper}>
                 <div className={styles.openingText}>
                     <h1>Cause</h1>
@@ -36,8 +30,22 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <hospitalNearby/>
-
+            <div className={styles.mapsWrapper}>
+                <div className={styles.mapsDetails}>
+                    <h1>Look for Details of Hospitals with Maps</h1>
+                    <p>This feature enables users to see hospitals in their area,<br /> also get information regarding <br />Public/Private Ward, Oxygen/Vaccine Availability</p>
+                    <button onClick={() => router.push('http://localhost:3002/hospitalNearby')}>Open Maps</button>
+                </div>
+                <img className={styles.mapsImg} src="https://beyereye.com/wp-content/uploads/2017/08/google-map-background-1900x1170.png" alt="maps_background" />
+            </div>
+            <div className={styles.videoWrapper}>
+                <img className={styles.videoImg} src="videoCall.png" alt="video_background" />
+                <div className={styles.videoDetails}>
+                    <h1>Take Advice from Doctor's Online</h1>
+                    <p>This feature enables users to connect with doctors,<br /> and get remote checkup, <br/> medical prescriptions and suggestions to improve immunity.</p>
+                    <button onClick={() => router.push('http://localhost:3002/conference')}>Call Now</button>
+                </div>
+            </div>
             {/* <div className={styles.youtubeWrapper}>
                 <h1>Youtube Recommendations on COVID-19</h1>
                 <div>
