@@ -1,8 +1,8 @@
-import React from 'react'
-// import YouTube from 'react-youtube';
+import React from 'react';
 import styles from "../Styles/Homepage.module.css";
 import { useRouter } from 'next/router';
 import { Navbar } from './Navbar';
+import ReactPlayer from 'react-player';
 
 const HomePage = () => {
     const router = useRouter();
@@ -46,15 +46,15 @@ const HomePage = () => {
                     <button onClick={() => router.push('http://localhost:3002/conference')}>Call Now</button>
                 </div>
             </div>
-            {/* <div className={styles.youtubeWrapper}>
+            <div className={styles.youtubeWrapper}>
                 <h1>Youtube Recommendations on COVID-19</h1>
                 <div>
-                    {/* <div className={styles.youtube}><YouTube videoId="1APwq1df6Mw"/></div>
-                    <div className={styles.youtube}><YouTube videoId="U8r3oTVMtQ0" /></div>
-                    <div className={styles.youtube}><YouTube videoId="ZqaPZ3ST1AY" /></div>
-                    <div className={styles.youtube}><YouTube videoId="LeK65pc0wrQ"/></div> */}
+                    <div className={styles.youtube}><ReactPlayer url="https://www.youtube.com/watch?v=1APwq1df6Mw"/></div>
+                    <div className={styles.youtube}><ReactPlayer url="https://www.youtube.com/watch?v=U8r3oTVMtQ0" /></div>
+                    <div className={styles.youtube}><ReactPlayer url="https://www.youtube.com/watch?v=ZqaPZ3ST1AY" /></div>
+                    <div className={styles.youtube}><ReactPlayer url="https://www.youtube.com/watch?v=LeK65pc0wrQ" /></div>
                 </div>
-            </div> */}
+            </div>
         </>
     )
 }
