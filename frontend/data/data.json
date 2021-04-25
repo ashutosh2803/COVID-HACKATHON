@@ -1,7 +1,7 @@
 [{
     "id":1,
     "title":"Alpine Superspeciality Hospital",
-    "address":"Sukhmani Complex    Beed Bypass Rd, PWD Colony    Aurangabad, Maharashtra 431005    India",
+    "address":"Sukhmani Complex Beed Bypass Rd, PWD Colony Aurangabad, Maharashtra 431005 India",
     "oxygen_supply":"medium",
     "private_ward":"15",
     "general_ward":"45",
@@ -12,7 +12,7 @@
 },{
     "id":2,
     "title":"Bembde Hospital for Plastic, Cosmetic, Burns & Hand Surgery",
-    "address":"Beed Bypass Rd    Sangram Nagar    Aurangabad, Maharashtra 431005    India",
+    "address":"Beed Bypass Rd Sangram Nagar Aurangabad, Maharashtra 431005 India",
     "oxygen_supply":"low",
     "private_ward":"24",
     "general_ward":"53",
@@ -25,7 +25,7 @@
 },{
     "id":"3",
     "title":"United CIIGMA Hospital",
-    "address":"Plot no 6 7, Darga Rd, Shahnoorwadi Aurangabad, Maharashtra 431005  India",
+    "address":"Plot no 6 7, Darga Rd, Shahnoorwadi Aurangabad, Maharashtra 431005 India",
     "oxygen_supply":"high",
     "private_ward":"45",
     "general_ward":"34",

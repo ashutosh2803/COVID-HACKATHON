@@ -1,10 +1,12 @@
 import React from 'react';
 import { GoogleMap, LoadScript,Marker,InfoWindow } from '@react-google-maps/api';
 import styles from  '../src/Styles/hospitalNearby.module.css'
-import data from "../data/data.json"
+import data from "../data/data.json";
+import { FiHome } from "react-icons/fi";
+import { useRouter } from 'next/router';
 
 const hospitalNearby=()=>{
-   
+    const router = useRouter();
     const [ selected, setSelected ] = React.useState({});  
     const [hover, setHover] = React.useState(false)
 
@@ -66,13 +68,9 @@ const hospitalNearby=()=>{
         
     <div className={styles.container} >
         
-        <style>
-            {
-                `.item-card{}`
-            }
-        </style>
         <div>
 
+        <button className={styles.homeBtn} onClick={() => router.push('http://localhost:3002')}><FiHome size="34px" /></button>
         <LoadScript googleMapsApiKey='AIzaSyACsMHxH-_rrljrAKwNJG4fU5TOxn7V-Nw'>        
          
          <GoogleMap
@@ -105,14 +103,14 @@ const hospitalNearby=()=>{
 
                     <span className={styles.wards}>
                     <h3>
-                        Oxygen suppy
+                        Oxygen Supply
                         <br/>
                          <p style={selected.oxygen_supply==="low"?{backgroundColor:"red"}:selected.oxygen_supply=="medium"?
                              {backgroundColor:"orange"}:{backgroundColor:"green"}}>
                             {selected.oxygen_supply}
                         </p>
                     </h3>
-                    <h3>Vaccine availability <p>{selected.vaccine}</p></h3>               
+                    <h3>Vaccine Availability <p>{selected.vaccine}</p></h3>               
                 </span>
                </div>
                
@@ -121,7 +119,6 @@ const hospitalNearby=()=>{
           }
              </ GoogleMap>
       </LoadScript>
-
       </div>
         <div style={{display:"flex",flexDirection:"column",marginLeft:"200px",overflow: "scroll"}}>
             <style jsx global>
@@ -139,17 +136,17 @@ const hospitalNearby=()=>{
                 </span>
 
                 <span className={styles.heading} >
-                    <h2>{item.title} &nbsp;&nbsp; dist{item.distance}  </h2>
+                    <h2>{item.title} &nbsp;&nbsp; {item.distance}</h2>
                     <p>{item.address}</p>
                 </span>
                 <span className={styles.wards}>
-                    <h3>Priavte ward <p>{item.private_ward}</p></h3>
-                    <h3>General ward <p>{item.general_ward}</p></h3>
+                    <h3>Private Ward <p>{item.private_ward}</p></h3>
+                    <h3>General Ward <p>{item.general_ward}</p></h3>
                 </span>
                 <span className={styles.wards}>
-                    <h3>Oxygen suppy <p style={item.oxygen_supply==="low"?{backgroundColor:"red"}:item.oxygen_supply=="medium"?
+                    <h3>Oxygen Supply <p style={item.oxygen_supply==="low"?{backgroundColor:"red"}:item.oxygen_supply=="medium"?
                     {backgroundColor:"orange"}:{backgroundColor:"green"}}>{item.oxygen_supply}</p></h3>
-                    <h3>Vaccine availability <p>{item.vaccine}</p></h3>               
+                    <h3>Vaccine Availability <p>{item.vaccine}</p></h3>               
                 </span>
                 </div>))
             }

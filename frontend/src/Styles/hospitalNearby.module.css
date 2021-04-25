@@ -11,7 +11,7 @@
 .itemCard{
     display: flex;
     flex-direction: column;
-    width:600px;
+    width: 100%;
     /* height:400px; */
     padding:10px;
     /* border:1px solid black; */
@@ -72,4 +72,17 @@
     padding:1px;
     width:70px;
 
+}
+.homeBtn{
+    padding: 2%;
+    border: none;
+    font-weight: 400;
+    border-radius: 10px;
+    background-color: rgb(201, 198, 198);
+    letter-spacing: 0.1ch;
+    font-size: 25px;
+    width: fit-content;
+}
+.homeBtn:hover{
+    background-color: coral;
 }
