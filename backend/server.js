@@ -27,4 +27,4 @@ io.on("connection", (socket) => {
 	})
 })
 
-server.listen(5005, () => console.log("server is running on port 5005"))
+server.listen(5006, () => console.log("server is running on port 5006"))

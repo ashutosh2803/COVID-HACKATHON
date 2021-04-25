@@ -1,0 +1,12 @@
+.footerWrapper{
+    width:100%;
+    height:300px;
+    text-align: center;
+}
+
+.iconWrapper{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 30px;
+}

@@ -1,0 +1,35 @@
+.formWrapper{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.inputBox, .inputTextarea{
+    background-color: #1F242D;
+    color: #fff;
+    height: 5vh;
+    margin: 3px;
+    padding: 1%;
+    font-size: 20px;
+    border: none;
+}
+.inputBox, .inputTextarea:focus{
+    outline: none;
+}
+.inputTextarea{
+    height: 25vh;
+}
+.inputSubmit {
+    border: 2px solid black;
+    margin: 2%;
+    width: 100px;
+    border-radius: 8px;
+    padding: 1%;
+    height: 8vh;
+    cursor: pointer;
+}
+.inputSubmit :hover{
+    color: #fff;
+    transition: 0.3s;
+    background-color: #2CBCC8;
+}
