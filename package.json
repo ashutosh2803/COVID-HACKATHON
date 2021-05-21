@@ -5,13 +5,17 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "server": "nodemon backend/server"
+    "heroku-postbuild": "npm install --prefix frontend && npm run next build --prefix frontend",
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm run next --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^6.0.2",
     "express": "^4.17.1",
     "nodemon": "^2.0.7",
     "socket.io": "^4.0.1"

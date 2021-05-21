@@ -1,5 +1,5 @@
 import React from 'react'
-// import YouTube from 'react-youtube';
+import ReactPlayer from 'react-player';
 import styles from "../Styles/Homepage.module.css";
 import { useRouter } from 'next/router';
 import { Navbar } from './Navbar';
@@ -9,10 +9,10 @@ const HomePage = () => {
     return (
         <>
             <Navbar/>
-            <div className={styles.openingWrapper}>
+            <div id="contact" className={styles.openingWrapper}>
                 <div className={styles.openingText}>
-                    <h1>Cause</h1>
-                    <h1>We Care</h1>
+                    <h1>Cause<br/>
+                        We Care</h1>
                     <p>The entire human race there are people dying. If <br />  you care enough for the living Make it a better <br /> place for you and for me.</p>
                 </div>
                 <img className={styles.openingImg} src="https://image.freepik.com/free-vector/cartoon-globe-wearing-mask-concept-quarantine-home-prevent-coronavirus_68708-1161.jpg" alt="background_img" />
@@ -46,15 +46,16 @@ const HomePage = () => {
                     <button onClick={() => router.push('http://localhost:3002/conference')}>Call Now</button>
                 </div>
             </div>
-            {/* <div className={styles.youtubeWrapper}>
+            <div className={styles.youtubeWrapper}>
                 <h1>Youtube Recommendations on COVID-19</h1>
                 <div>
-                    {/* <div className={styles.youtube}><YouTube videoId="1APwq1df6Mw"/></div>
-                    <div className={styles.youtube}><YouTube videoId="U8r3oTVMtQ0" /></div>
-                    <div className={styles.youtube}><YouTube videoId="ZqaPZ3ST1AY" /></div>
-                    <div className={styles.youtube}><YouTube videoId="LeK65pc0wrQ"/></div> */}
+                <div className={styles.youtube}><ReactPlayer url="https://www.youtube.com/watch?v=1APwq1df6Mw"/></div>
+                    <div className={styles.youtube}><ReactPlayer url="https://www.youtube.com/watch?v=U8r3oTVMtQ0" /></div>
+                    <div className={styles.youtube}><ReactPlayer url="https://www.youtube.com/watch?v=ZqaPZ3ST1AY" /></div>
+                    <div className={styles.youtube}><ReactPlayer url="https://www.youtube.com/watch?v=LeK65pc0wrQ" /></div>
+
                 </div>
-            </div> */}
+            </div>
         </>
     )
 }

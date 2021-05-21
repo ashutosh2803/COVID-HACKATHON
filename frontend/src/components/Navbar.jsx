@@ -9,6 +9,7 @@ import { MdLocalHospital } from "react-icons/md";
 import { IoMdHome } from "react-icons/io"
 import { IconContext } from "react-icons"
 import styles from "../Styles/Navbar.module.css"
+import {Link} from "react-scroll"
 const Navbar = () => {
     const [isDark, setIsDark] = React.useState(false)
     
